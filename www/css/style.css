@@ -1,0 +1,40 @@
+/* Empty. Add your own CSS if you like */
+/* start bakgrund*/
+.splash{
+    background: url(../img/stockholm.png)
+         no-repeat center center fixed;
+    background-size: cover;
+}
+/* bilden på ovan start bild*/
+.branding{
+    width:50%;
+    max-width:200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top:5px;
+
+}
+/* text rubrik start */
+.tagline{
+    color:navy;
+      font-size: 10px;
+}
+/* text under rubrik start*/
+.branding p{
+    color:navy;
+    font-size: 10px;
+}
+/* Bakgrund beställnig summering*/
+.list-inset h4 {
+     background-color: wheat  !important; 
+     }
+/* uppgift best*/
+.frm{
+    margin: 3px;
+}
+.frm p{
+    background-color: lightpink
+}
+.frm a{
+    background-color: lightblue
+}

@@ -1,0 +1,54 @@
+<!--formulär för bokning-->
+<ion-header-bar class="bar-positive">
+    <h1 class="title">Boka rum</h1>
+</ion-header-bar>
+<ion-content>
+    <div class="row">
+        <div class="col">
+            <div class="list">
+                <span class="input-label">Incheckning</span>
+                <input type="date" ng-model="incheck" required></label>
+                <span class="input-label">Antal vuxna</span>
+                <input type="number" ng-model="vuxna" required></label>
+            </div>
+        </div>
+        <div class="col">
+            <div class="list">
+                <span class="input-label">Utcheckning</span>
+                <input type="date" ng-model="utcheck" required></label>
+                <span class="input-label">Antal barn</span>
+                <input type="number" ng-model="barn" required></label>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <form name="frm">
+        <div class="frm">
+            <h5>Uppgifter om beställaren</h5>
+            <input type="text" name="firstname" placeholder="Förnamn" ng-model="name1" required ng-minlength="2">
+            <span ng-show="frm.firstname.$invalid">Måste anges</span>
+            <span ng-show="frm.firstname.$error.minlength">För kort</span>
+
+            <input type="text" name="secondname" placeholder="Efternamn" ng-model="name2" required ng-minlength="2">
+            <span ng-show="frm.secondname.$invalid">Måste anges</span>
+            <span ng-show="frm.secondname.$error.minlength">För kort</span>
+            <input type="text" name="phonenumber" placeholder="Telefon" ng-model="phone" required ng-maxlength="20">
+            <span ng-show="frm.phonenumber.$invalid">Måste anges</span>
+            <span ng-show="frm.phonenumber.$error.maxlength">För långt</span>
+
+            <input type="email" name="email" placeholder="email" ng-model="email" required>
+            <span ng-show="frm.secondname.$invalid">Måste anges</span>
+            <span ng-show="frm.email.$dirty && frm.email.$error.email">Ingen email</span>
+
+            <a href="#/tab/list" class="item item-icon-left"><i class="icon ion-key"></i>Klicka här för att välj rum</a>
+            <p> Frågor ring oss på 08-121314 Mån-Sön 06-22</p>
+        </div>
+    </form>
+
+
+    <ion-tab title="Rum" icon="ion-key" href="#/tab/list">
+        <ion-nav-view name="list-tab"></ion-nav-view>
+    </ion-tab>
+
+</ion-content>

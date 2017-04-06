@@ -1,0 +1,38 @@
+[
+  {
+    "name":"Wildlife",
+    "shortname":"pontare",
+    "price":"1000kr/natt",
+    "bio":"Inspererat av naturen har detta dubbelrum inreds. Självklart finns tillgång till egen dusch med toalett,wifi och tv.",
+    "booknr":"Rum 01"
+  },
+
+  {
+    "name":"Modernlife",
+    "shortname":"flisan",
+    "price":"900kr/natt",
+    "bio":"Detta dubbelrum har modern inredning med egen dusch med toalett, rökfritt och tillgång till wifi och tv.",
+    "booknr":"Rum 02"
+  },
+  {
+    "name":"Familjelyan",
+    "shortname":"family",
+    "price":"1300kr/natt",
+    "bio":"Här får den lilla familjen på max 4 personer plats i en dubbelsäng samt en våningsäng tillgång till egen dusch med toalett.",
+    "booknr":"Rum 03"
+  },
+  {
+    "name":"Empire",
+    "shortname":"calle",
+    "price":"600kr/natt",
+    "bio":"Inredningen i detta enkelrum är inspererad empirtiden,du kommer att sova som en kejsare.",
+    "booknr":"Rum 04"
+  },
+  {
+    "name":"Gustavianska",
+    "shortname":"marie",
+    "price":"500kr/natt",
+    "bio":"Detta är en bohemisk dröm, sov detta enkelrum som om du vore på ett palats",
+    "booknr":"Rum 05"
+  }
+]

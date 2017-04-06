@@ -1,0 +1,35 @@
+<!--Boknings sammanställning-->
+<ion-header-bar class="bar-positive">
+    <a href="#/tab/list" class="button button-icon ion-chevron-left">
+Back
+</a>
+    <h2 class="title">Rum info</h2>
+</ion-header-bar>
+
+<ion-content>
+    <ion-list class="list-inset">
+        <ion-item class="item-text-wrap" ng-repeat="item in rooms |filter: { shortname: whichrooms }">
+            <img ng-src="img/{{item.shortname}}_tn.jpg" width="100" height="90" alt="{{ item.name }} Photo">
+            <h2>{{ item.name }}</h2>
+            <h3>{{ item.price }}</h3>
+            <p>{{item.bio}}</p>
+            <hr>
+            <h2>Rummet är nu bokat av</h2>
+            <h4>
+                <span class "label label-primary">Förnamn: {{name1}} Efternamn: {{name2}}</span><br>
+                <span class "label label-primary">Epost: {{email}}</span><br>
+                <span class "label label-primary">Telefon: {{phone}}</span><br>
+                <span class "label label-primary">Rum: {{item.name}}<br>
+                    <span class "label label-primary">Incheckning:<br> {{incheck|date}} </span><br>
+                <span class "label label-primary">Utcheckning:<br> {{utcheck|date}} </span><br>
+                <span class "label label-primary">Vuxna: {{vuxna}} Barn: {{barn}}</span><br>
+                <span class "label label-primary">Pris: {{item.price}}</span><br>
+            </h4>
+            <button class="button button-positive" ng-click="showConfirm()">
+                    Bekräfta din bokning
+                    </button>
+
+
+    </ion-list>
+</ion-content>
+</ion-view>
